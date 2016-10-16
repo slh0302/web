@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+
+    <title>Sticky Footer Template for Bootstrap</title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- Custom styles for this template -->
+	<style>
+		body{
+			background:#ffffff;
+		}
+		.icon-prev{
+			background-color: transparent;
+			font-size:120px
+		}
+		#footer {
+			height: 60px;
+		}
+		#footer {
+			background-color: #f5f5f5;
+		}
+		
+	</style>
+	<script>
+		$(function () { $("[data-toggle='tooltip']").tooltip(); });
+	</script>
+  </head>
+
+  <body>
+	<!-- Carousel
+	================================================== -->
+	<bgsound src="./Bandari-安妮的仙境.mp3" loop="-1">
+	<div class="row" style="width:100%">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8"style="margin-top:20px;">
+		<ul class="nav nav-tabs" id="mytabs" >
+			<li  class="active">
+				 <a href="#index" data-toggle="tab">首页</a>
+			</li>
+			<li >
+				 <a href="#introduce" data-toggle="tab">个人简介</a>
+			</li>
+			<li >
+				 <a href="#lesson" data-toggle="tab">课程信息</a>
+			</li>
+			<li >
+				 <a href="#register" data-toggle="tab">账号注册</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<div class="tab-content">
+		<div class="tab-pane fade in active" id="index" >
+			<div id="myCarousel" class="carousel slide" >
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+				<div class="item active">
+				  <img src="./img/pic1.jpg" style="width:100%" class="img-responsive">
+				  <div class="container">
+					<div class="carousel-caption" style="margin-bottom:120px">
+					  <h1 style="font-size:60px">Welcome to my pages!</h1>
+					  <p style="font-size:20px">Hello world</p>
+					  <p><a class="btn btn-large btn-primary">注册</a> </p>
+					</div>
+				  </div>
+				</div>
+				<div class="item">
+				  <img src="./img/pic2.jpg" style="width:100%" class="img-responsive">
+				  <div class="container">
+					<div class="carousel-caption" style="margin-bottom:120px">
+					  <h1>Changes to the Grid</h1>
+					  <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.</p>
+					  <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+					</div>
+				  </div>
+				</div>
+				<div class="item">
+				  <img src="./img/pic3.jpg" style="width:100%"class="img-responsive">
+				  <div class="container">
+					<div class="carousel-caption" style="margin-bottom:120px">
+					  <h1>Percentage-based sizing</h1>
+					  <p>With "mobile-first" there is now only one percentage-based grid.</p>
+					  <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" style="font-size:50px;background:transparent;"></span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"style="font-size:50px;background:transparent"></span>
+			  </a>  
+			</div>
+			<!-- /.carousel -->
+
+
+			<!-- Marketing messaging and featurettes
+			================================================== -->
+			<!-- Wrap the rest of the page in another container to center all the content. -->
+			<div class="container theme-showcase">
+
+				
+			</div>
+		</div>
+		<!--<div class="well" style="max-width:400px;margin:20px auto 10px;">
+			<button type="button" class="btn btn-primary btn-lg btn-block">注册</button>
+		</div>-->
+		<div class="tab-pane fade" id="introduce" >
+			<div class="container theme-showcase" role="main"style="margin-top:30px; margin-bottom:30px">
+				<h1>戴文颖</h1>
+				<br/>
+			</div>	
+		</div>
+		
+		<div class="tab-pane fade"id="lesson" >
+			<div class="container theme-showcase" role="main"style="margin-top:30px; margin-bottom:30px">
+				<table class="table table-bordered" >
+					<colgroup>
+						<col style>
+						<col style>
+						<col style="width:16%">
+						<col style="width:16%">
+						<col style="width:16%">
+						<col style="width:16%">
+						<col style="width:16%">
+						
+					</colgroup>
+					<caption>2016秋季学期课程表</caption>
+					<thead>
+					  <tr>
+						<th colspan="2"></th>
+						<th sytle="width:20px">星期一</th>
+						<th sytle="width:20%">星期二</th>
+						<th sytle="width:20%">星期三</th>
+						<th sytle="width:20%">星期四</th>
+						<th sytle="min-width:20px">星期五</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td rowspan="2" style="text-align:center;vertical-align:middle;font-weight:bold" >第一节</td>
+						<td>8:00-8:50</td>
+						<td></td>
+						<td></td>
+						<td rowspan="2" style="text-align:center;vertical-align:middle">
+							<span data-toggle="tooltip" title="The design and development of Web application program">Web应用程序设计与开发_01(校本部教三楼3-337）</span>
+						</td>
+						<td></td>
+						<td></td>
+					  </tr>
+					  </tr>
+					  <tr>
+						<td>9:00-10:50</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					  </tr>
+					  <tr>
+						<td rowspan="2" style="text-align:center;vertical-align:middle;font-weight:bold">第二节</td>
+						<td>10:10-11:00</td>
+						<td></td>
+						<td  rowspan="2" style="text-align:center;vertical-align:middle">
+							<span data-toggle="tooltip" title="Practical Software Engineering">实用软件工程_01(校本部教四楼4-202)</span>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					  </tr>
+					  <tr>
+						<td>11:10-12:00</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					  </tr>
+					  <tr>
+						<td colspan="7" align="center" style="font-weight:bold">午休</td>
+					  </tr>
+					  <tr>
+						<td rowspan="2" style="text-align:center;vertical-align:middle;font-weight:bold">第三节</td>
+						<td>1:30-2:20</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					  </tr>
+					  <tr>
+						<td>2:30-3:20</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					  </tr>
+					  <tr>
+						<th rowspan="2" style="text-align:center;vertical-align:middle;font-weight:bold">第四节</th>
+						<td>3:30-4:20</td>
+						<td  rowspan="2" style="text-align:center;vertical-align:middle">
+							<span data-toggle="tooltip" title=" JAVA Programming">Java程序设计_01(校本部教三楼3-519)</span	>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					  </tr>
+					  <tr>
+						<td>4:30-5:20</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					  </tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<div class="tab-pane fade" id="register">
+			<div class="container theme-showcase" role="main"style="margin-top:30px; margin-bottom:30px">
+				<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+						<form class="form-signin" role="form">
+						<h2 class="form-signin-heading">Please sign in</h2>
+						<input type="email" class="form-control" placeholder="Email address" required autofocus>
+						<input type="password" class="form-control" placeholder="Password" required>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox" value="remember-me"> Remember me
+						  </label>
+						</div>
+						<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+						</form>
+				</div> <!-- /container -->
+			
+				</div>
+			</div>			
+		</div>
+	<div class="container">
+		  <!-- FOOTER 		-->
+		<footer style="position:absolute;height:60px;width:100%; bottom: 0px;left:0px;">
+			<p style="text-align:center;font-size:15px;margin-top:20px;vertical-align:middle">
+				<span class="glyphicon glyphicon-envelope"></span>
+				CONTACT TO ME: 
+				<a href="mailto:dwy@bupt.edu.cn"> dwy@bupt.edu.cn</a>
+			</p>
+		</footer>
+
+	</div>
+	<!-- /.container -->
+  </body>
+</html>
